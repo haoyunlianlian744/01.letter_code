@@ -1,0 +1,29 @@
+name: al-alloy-ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  # Core data science
+  - numpy>=2.0
+  - pandas>=2.0
+  - scipy>=1.10
+  - scikit-learn>=1.3
+  # Visualization
+  - matplotlib>=3.7
+  - seaborn>=0.12
+  # Machine learning & explainability
+  - shap>=0.42
+  - pytorch>=2.0
+  - xgboost>=2.0
+  - lightgbm>=4.0
+  - optuna>=3.0
+  - mlxtend>=0.22
+  # Jupyter
+  - jupyter>=1.0
+  - nbconvert>=7.0
+  # Materials science (pip-only packages)
+  - pip
+  - pip:
+      - pymatgen>=2024.0
+      - matminer>=0.9
